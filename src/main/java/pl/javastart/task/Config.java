@@ -2,6 +2,9 @@ package pl.javastart.task;
 
 public class Config {
 
+    protected Config() {
+    }
+
     private int minRequiredEarnings = 2000;
     private double percentage = 0.03;
 

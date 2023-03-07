@@ -6,27 +6,30 @@ public class Offer {
     private double value;
     private double percentage;
 
-    public boolean isValid() {
+    protected Offer() {
+    }
+
+    protected boolean isValid() {
         return valid;
     }
 
-    public void setValid(boolean valid) {
+    protected void setValid(boolean valid) {
         this.valid = valid;
     }
 
-    public double getValue() {
-        return value;
-    }
-
-    public void setValue(double value) {
+    protected void setValue(double value) {
         this.value = value;
     }
 
-    public double getPercentage() {
+    protected double getValue() {
+        return value;
+    }
+
+    protected double getPercentage() {
         return percentage;
     }
 
-    public void setPercentage(double percentage) {
+    protected void setPercentage(double percentage) {
         this.percentage = percentage;
     }
 }
